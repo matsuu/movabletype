@@ -2019,6 +2019,8 @@ BEGIN {
                 { default => 'X-MT-Authorization, X-Requested-With' },
             'DataAPICORSExposeHeaders' =>
                 { default => 'X-MT-Next-Phase-URL' },
+            'DisableDataAPIResourceCache'    => { default => 0, },
+            'DataAPIResourceCacheSerializer' => { default => 'MTS', },
         },
         upgrade_functions => \&load_upgrade_fns,
         applications      => {
